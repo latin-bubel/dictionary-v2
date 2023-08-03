@@ -5,8 +5,8 @@
   --default-color-dark: rgb(207, 207, 207);
   --background-color-light: #eaeaea;
   --background-color-light-section: #fbfbfb;
-  --background-color-dark: #4e4152;
-  --background-color-dark-section: #66546b;
+  --background-color-dark: #121212;
+  --background-color-dark-section: #232323;
 }
 
 /* Light theme styles */
@@ -68,6 +68,7 @@
 
 .Appdark .Meaning .example {
   color: var(--default-color-dark);
+  opacity: 0.8;
 }
 
 .Appdark .Meaning .definition {
@@ -84,6 +85,7 @@
 
 .Appdark .Synonyms li {
   color: var(--default-color-dark);
+  opacity: 0.6;
 }
 
 .Appdark .Phonetic a {
