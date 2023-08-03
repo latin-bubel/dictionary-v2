@@ -1,11 +1,101 @@
 :root {
-  --heading-font-family: "Raleway", sans-serif;
+  --heading-font-family: "Lato", sans-serif;
+  --default-font-family: "Montserrat", sans-serif;
+  --default-color-light: rgb(56, 56, 56);
+  --default-color-dark: rgb(207, 207, 207);
+  --background-color-light: #eaeaea;
+  --background-color-light-section: #fbfbfb;
+  --background-color-dark: #4e4152;
+  --background-color-dark-section: #66546b;
+}
 
-  --default-font-family: "Cabin", sans-serif;
+/* Light theme styles */
+.Applight {
+  background-color: var(--background-color-light);
+}
+
+.Applight .Results section {
+  background-color: var(--background-color-light-section);
+}
+
+.Applight .Dictionary section {
+  background-color: var(--background-color-light-section);
+}
+
+.Appdark {
+  background-color: var(--background-color-dark);
+}
+
+.Appdark label {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Results section {
+  background-color: var(--background-color-dark-secion);
+}
+
+.Appdark .Dictionary section {
+  background-color: var(--background-color-dark-section);
+}
+
+.Appdark .Dictionary h1 {
+  color: rgb(211, 99, 99);
+}
+
+.Applight .Dictionary h1 {
+  color: var(--default-color-light);
+}
+
+.Appdark .Dictionary h1 {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Dictionary .hint {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Results h2 {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Phonetic .text {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Meaning h3 {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Meaning .example {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Meaning .definition {
+  color: var(--default-color-dark);
+}
+
+.Appdark .App-header {
+  color: var(--default-color-dark);
+}
+
+.Appdark .App-footer {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Synonyms li {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Phonetic a {
+  color: var(--default-color-dark);
+}
+
+.Appdark .Phonetic a:hover {
+  background: var(--default-color-dark);
+  color: #9670f4;
 }
 
 body {
-  background: #6759aa;
   font-family: var(--default-font-family);
 }
 
@@ -13,12 +103,16 @@ a {
   color: #9670f4;
 }
 
+label {
+  font-family: var(--default-font-family);
+}
 .App {
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 960px;
+  padding: 20px;
 }
 .App-header {
-  margin: 30px 0;
+  padding: 30px 0;
   text-align: center;
   font-size: xx-large;
   font-family: var(--heading-font-family);
@@ -26,5 +120,5 @@ a {
 
 .App-footer {
   text-align: center;
-  margin: 30px 0;
+  padding: 30px;
 }
