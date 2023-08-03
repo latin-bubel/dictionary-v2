@@ -25,7 +25,7 @@ export default function Dictionary(props) {
 
     //documentation = https://www.pexels.com/api/documentation/#photos-search
 
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     const pexelsApiKey =
       "sd02j0fYRhRkLIZOCc8Cge3w3lAMz0WC719gYf9K6EOc7FblOXbfn2we";
     let headers = { Authorization: `${pexelsApiKey}` };
@@ -62,7 +62,9 @@ export default function Dictionary(props) {
             suggested words: yoga, farm, coffe, sunrise...
           </div>
         </section>
+
         <Results results={results} />
+
         <Photos photos={photos} />
       </div>
     );
