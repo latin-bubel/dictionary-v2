@@ -3,7 +3,7 @@
 This project uses Dictionary API (https://dictionaryapi.dev/e) and Pexels AP (https://www.pexels.com/api).\
 The goal of this project was to create a Dictionary with definitions and photos of searched words.\
 Implemented a dark theme mode.\
-Project hosted on Netlify: https://luminous-pony-be6e04.netlify.app/.\
+Project hosted on Netlify: https://luminous-pony-be6e04.netlify.app/
 
 # Getting Started with Create React App
 
